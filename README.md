@@ -30,5 +30,22 @@ of the universe is now:
   - One representation in the *todo.tdp* file on Maria's disk
   - One representation memory in the running TodoPlus process
 
-### Representation Address vs. Object Identity
+# Snippets
+
+### A persisted object maintains its identity
+
+Assume two executions of an application, where the executions are separated by
+a span of time.
+
+During the first execution the reference entity *ref1* becomes attached to the
+object *O1*. The first execution ends and *O1* is persisted.
+
+The second excecution retrieves *O1* from persistent storage and attaches it to
+the reference entity *ref2*.
+
+*O1* in the second execution is not just an object which happens to have fields
+identical to *O1* in the first execution. If we could access *ref1* and *ref2*
+in a single execution, we would find that the two references denote the same
+object. Across both executions, the object *O1* maintains the same object
+identity.
 
