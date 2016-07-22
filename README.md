@@ -32,6 +32,46 @@ of the universe is now:
 
 # Snippets
 
+### address space
+
+**address space** *(noun)*
+
+- A set of addresses in memory (e.g. physical memory, virtual memory,
+  non-volatile memory).
+  - *The file constitutes a 5 MiB address space.*
+
+### representation
+
+**representation** *(noun)*
+
+- The bits and bytes that constitute a particular object in a particular
+  address space.
+  - *Each execution has its own representation of the object.*
+
+### translate, translation
+
+**translate** *(verb)*
+
+- To create or update an object representation in a destination address space
+  from the corresponding object representation in a source address space.
+  - *The class translates objects from files into working memory.*
+
+### persist, persistence
+
+**persist** *(verb)*
+
+- To translate an object between an address space in non-volatile memory and an
+  address space in volatile memory (the volatile address space may be either
+  the source or destination of the translation).
+  - *The object was persisted to disk before the execution terminated.*
+- *(of an object)* To exist as the same object in future executions.
+  - *This object persists from yesterday's execution.*
+
+### Single representation principle
+
+A particular address space has at most one representation of a particular
+object.
+
 ### A persisted object maintains its identity
 
 Assume two executions of an application, where the executions are separated by
@@ -48,4 +88,7 @@ identical to *O1* in the first execution. If we could access *ref1* and *ref2*
 in a single execution, we would find that the two references denote the same
 object. Across both executions, the object *O1* maintains the same object
 identity.
+
+A persistence mechanism that preserves object identity is said to exhibit
+**identity integrity**.
 
