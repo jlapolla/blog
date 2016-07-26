@@ -1,5 +1,3 @@
-# Snippets
-
 ### entity
 
 **entity** *(noun)*
@@ -32,6 +30,13 @@ SOME_CLASS b = a;
 - A run-time value that uniquely identifies an object.
   - *A constructor function creates an object and returns a reference to the
     newly created object.*
+
+### execution
+
+**execution** *(noun)*
+
+- A particular instance of a running program.
+  - *The object persists from yesterday's execution.*
 
 ### address space
 
@@ -79,11 +84,55 @@ in virtual memory is identified by a single reference.
 
 **persist** *(verb)*
 
-- To translate an object from an address space in volatile memory to an address
-  space in non-volatile memory, or vice-versa.
-  - *The object was persisted to disk before the execution terminated.*
-- *(of an object)* To exist as the same object in future executions.
+- *(intransitive)* *(of an object)* To exist in an address space besides the
+  address space where the object was created.
   - *The object persists from yesterday's execution.*
+
+**Discussion**
+
+A particular object is created only once. The majority of objects created
+during a particular execution are lost forever when that execution terminates.
+If we translate the object into another address space before the execution
+terminates, then the object can persist in the new address space beyond the
+termination of the execution that created it.
+
+Traditionally, we translate the new object to an address space in non-volatile
+memory (e.g. a file on disk). More generally, an object persists so long as it
+has at least one representation in some address space.
+
+### Distinction between object and representation
+
+An object is a more abstract concept than a representation. An object may have
+multiple representations, yet all of its representations describe one object.
+
+**Discussion**
+
+Assume a software system that maintains a catalog of countries. The system has
+a class *COUNTRY* with attributes such as *name*, *capital_city*, *population*,
+etc. The system makes its data available online.
+
+A particular *COUNTRY* object, say *France*, may have representations in many
+places. For example: 1) in database files on disk on a central server, 2) in
+the memory of a user's web browser, 3) etc. All these representations aim to
+describe the object *France*.
+
+In an ideal world (i.e. the Grand Single Computer), updating the *population*
+of the object *France* immediately makes the new population available to all
+executions that refer to *France*. In the reality of distributed systems, there
+are multiple representations of *France*, and some of these representations may
+be unfaithful because they do not have the newly updated population.
+
+Yet, conceptually, there exists a single object *France*, which has the newly
+updated population. Correcting unfaithful representations is a separate matter.
+
+### faithful
+
+**faithful** *(adjective)*
+
+- *(of a representation)* Consistent with the current state of the object it
+  describes.
+  - *Let's assume that the object's representation in* file1 *is faithful, and
+    discard the representation in* file2.
 
 ### Single representation principle
 
