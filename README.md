@@ -84,8 +84,8 @@ in virtual memory is identified by a single reference.
 
 **persist** *(verb)*
 
-- *(intransitive)* *(of an object)* To exist in an address space besides the
-  address space where the object was created.
+- *(intransitive)* *(of an object)* To continue to exist. To continue to have
+  at least one representation in some address space.
   - *The object persists from yesterday's execution.*
 
 **Discussion**
@@ -100,30 +100,36 @@ Traditionally, we translate the new object to an address space in non-volatile
 memory (e.g. a file on disk). More generally, an object persists so long as it
 has at least one representation in some address space.
 
-### Distinction between object and representation
+### Object-representation distinction
 
 An object is a more abstract concept than a representation. An object may have
 multiple representations, yet all of its representations describe one object.
 
 **Discussion**
 
-Assume a software system that maintains a catalog of countries. The system has
-a class *COUNTRY* with attributes such as *name*, *capital_city*, *population*,
-etc. The system makes its data available online.
+Consider a banking system. The system has a class *ACCOUNT* with attributes
+such as *owner* and *balance*.
 
-A particular *COUNTRY* object, say *France*, may have representations in many
-places. For example: 1) in database files on disk on a central server, 2) in
-the memory of a user's web browser, 3) etc. All these representations aim to
-describe the object *France*.
+A particular *ACCOUNT* object, say John's account, may have representations in
+many places. For example: 1) in database files on disk on a central server, 2)
+in the memory of John's web browser, 3) etc. Each of these representations
+describe John's account, which is conceptually a single object.
 
-In an ideal world (i.e. the Grand Single Computer), updating the *population*
-of the object *France* immediately makes the new population available to all
-executions that refer to *France*. In the reality of distributed systems, there
-are multiple representations of *France*, and some of these representations may
-be unfaithful because they do not have the newly updated population.
+In an ideal world, updating the balance of John's account immediately makes the
+new account balance available to all executions that refer to John's account.
+In the reality of distributed systems, there are multiple representations of
+John's account, and some of these representations may be unfaithful because
+they do not reflect the newly updated account balance.
 
-Yet, conceptually, there exists a single object *France*, which has the newly
-updated population. Correcting unfaithful representations is a separate matter.
+Yet, conceptually, there exists a single object that is John's account, which
+has the newly updated account balance. Correcting unfaithful representations is
+a separate matter. For example, to correct the unfaithful representation in
+John's web browser, John may have to reload the page to see the newly updated
+account balance.
+
+This notion of an object conflicts with the standard object oriented definition
+of an object as a runtime data structure (this standard definition is closer to
+what we call a **representation**).
 
 ### faithful
 
@@ -133,6 +139,26 @@ updated population. Correcting unfaithful representations is a separate matter.
   describes.
   - *Let's assume that the object's representation in* file1 *is faithful, and
     discard the representation in* file2.
+
+### Grand Ideal Computer
+
+A fictitious computer that eliminates all persistence issues. The Grand Ideal
+Computer:
+
+- Has one large address space, which contains exactly one representation of
+  each object in the world.
+- Runs all executions in the world, and all executions share the same large
+  address space concurrently.
+- Is always on.
+
+### object identity, object id
+
+**object identity** *(noun)*
+
+- A fictitious object attribute that is unique for every object ever created,
+  and that is available as an attribute on every object ever created.
+  - *If both representations have the same object id, we know they describe the
+    same object.*
 
 ### Single representation principle
 
