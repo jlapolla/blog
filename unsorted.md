@@ -27,9 +27,9 @@ SOME_CLASS b = a;
 
 **reference** *(noun)*
 
-- A run-time value that uniquely identifies an object.
-  - *A constructor function creates an object and returns a reference to the
-    newly created object.*
+- A runtime value that uniquely identifies a runtime object.
+  - *A constructor function creates a runtime object and returns a reference to
+    the newly created object.*
 
 ### execution
 
@@ -129,7 +129,35 @@ account balance.
 
 This notion of an object conflicts with the standard object oriented definition
 of an object as a runtime data structure (this standard definition is closer to
-what we call a **representation**).
+what we call a **representation**). In cases of ambiguity we'll use the term
+**conceptual object** to denote our notion of an object, and the term **runtime
+object** to denote the standard object oriented notion of an object.
+
+### runtime object
+
+**runtime object** *(noun)*
+
+- A representation in an active address space.
+  - *A constructor function creates a runtime object and returns a reference to
+    the newly created object.*
+
+### active address space
+
+**active address space** *(noun)*
+
+- An address space (typically owned by a running execution) that external
+  executions cannot write directly to, or read directly from.
+  - *The virtual memory allocated to an execution is an active address space.
+    The operating system prevents direct access.*
+
+### passive address space
+
+**passive address space** *(noun)*
+
+- An address space that an external execution can write directly to, or read
+  directly from.
+  - *A file is a passive address space; any exeuction can read / write
+    arbitrary bytes at any address in a file.*
 
 ### faithful
 
@@ -159,6 +187,12 @@ Computer:
   and that is available as an attribute on every object ever created.
   - *If both representations have the same object id, we know they describe the
     same object.*
+
+### Object identity crisis
+
+Consider an HR (human resources) system with a class *EMPLOYEE* with properties
+*name* and *manager* where *name* is a string and *manager* is a reference to
+another *EMPLOYEE* object (or the *Void* reference).
 
 ### Single representation principle
 
