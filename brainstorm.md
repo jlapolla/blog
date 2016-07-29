@@ -1,3 +1,110 @@
+### Surrogate may solve "partial translation" problem
+
+Consider when an execution does not have permission (for security reasons) to
+view or modify the entire contents of an object. In this case, a surrogate
+which provides a restricted view of the object may be the answer.
+
+### When to use expanded subobjects
+
+Use expanded subobject when you may have partial information. E.g. if we have a
+zip code reference, then we also know the city and state. But then we cannot
+express uncertainty. For instance, what if we know the state or city, but not
+the specific zip code?
+
+### Surrogate should not edit target object
+
+Allowing the surrogate to alter the target object puts the final action
+decision into the hands of the editor, not the caller. This may be a problem.
+
+One option: instead of having the surrogate edit the object, have the object
+"accept" the surrogate. Of course, this does not work when creating a new
+object.
+
+Caller initializes and passes in surrogate, callee modifies surrogate, caller
+applies surrogate to existing object, or gets a new object from the surrogate.
+
+### Translation and inheritance
+
+In any address space, every object has a generating class. You can only
+translate an object into it's generating class. You cannot translate it into a
+parent class.
+
+### Beware of immutable structures
+
+Beware of immutable structures! Altering them (creating a new one with most of
+the components the same) is a nightmare. If you need to do this, you may have a
+flaw in your design (e.g. the structure should sematically be mutable). Beware
+of immutable objects with references to other immutable objects.
+
+### Surrogate and MVVM
+
+Surrogate is the "view model" in MVVM. It can combine attributes from multiple
+objects into one view.
+
+### Surrogate update and copy-on-write
+
+Surrogate update versus new object is related to "copy on write" idea.
+
+### Immutability and interning
+
+Concept of immutability resulting in implicit identity is closely related to
+"string interning", "hash consing", and the "flyweight" design pattern.
+
+### Defining **intrinsic properties**
+
+Intrinsic properties can be computed without dereferencing mutable references.
+Problem with observer model when attempting to observe extrinsic properties.
+Questionable if extrinsic properties really belong on an object in the first
+place.
+
+### All references assumed shared
+
+In general, never assume that a reference is private to your code.
+
+### Object id is immutable
+
+Object id is an immutable attribute, by definition.
+
+### runtime object
+
+A **runtime object** is a representation in an active memory space.
+
+### Correcting definition of "reference"
+
+Definition of **reference** is incorrect. Should be: ... identifies a runtime
+object in a given address space.
+
+### Identity integrity possible with weak references
+
+Existence of weak references in a runtime environment allows identity integrity
+to be maintained orthogonally. It is unknown whether we can accomplish this
+without weak references. See artima.com/insidejvm/ed2/gc16.html.
+
+### Object id creation
+
+The execution that creates an object is responsible for creating an id for the
+object upon translation.
+
+### Object not honored
+
+Authority may choose not to "honor" (i.e. reject) a new object, or an update to
+an existing object.
+
+### Agree and conflict
+
+Representations in two address spaces may "agree" or "conflict". Conflicting
+representations need to be "reconciled". Note that this is conceptually
+different from synchronizing a surrogate. In the case of a surrogate, the
+execution is aware of the distinction between the surrogate and the runtime
+object.
+
+### Synchronization Hell
+
+Use as few surogates as possible. Avoid "Synchronization Hell".
+
+Surrogates may be out of sync with the authoritative representation in their
+address space. They need a synchronization mechanism.
+
 ### Pondering object-relational impedance mismatch
 
 Object relational impedance mismatch due to the difference in the
