@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object created="2016-07-30" modified="2016-07-30">
+  <uuid>6204abe8-7714-4bc2-b942-b09d2e2080f9</uuid>
+  <title>Object identity crisis correct data structure</title>
+  <description>
+    EMPLOYEE John and EMPLOYEE Sally both reference EMPLOYEE Mary as their
+    'manager'. The data structure is semantically correct.
+  </description>
+  <file-extension>.svg</file-extension>
+</object>
+<object created="2016-07-30" modified="2016-07-30">
+  <uuid>74827304-3a32-4c6f-8af4-14d08c506e8e</uuid>
+  <title>Object identity crisis single worker</title>
+  <description>
+    EMPLOYEE John references EMPLOYEE Mary as its 'manager'. The runtime
+    objects represent a subset of the conceptual objects in the universe. The
+    data structure is semantically correct even though it is incomplete.
+  </description>
+  <file-extension>.svg</file-extension>
+</object>
+
