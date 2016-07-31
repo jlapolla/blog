@@ -24,3 +24,17 @@ markdown: kramdown
 host: 0.0.0.0
 port: 8080
 
+# Collections
+collections:
+  objects:
+    output: true
+
+# Object defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: objects
+    values:
+      layout: "default"
+
