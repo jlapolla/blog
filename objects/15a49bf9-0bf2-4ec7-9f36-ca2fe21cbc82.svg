@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="25cm" height="10cm" viewBox="171 86 486 192" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <g>
+      <rect style="fill: #ffffff" x="172.6" y="205" width="104.8" height="28"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="172.6" y="205" width="104.8" height="28"/>
+      <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="225" y="224">EMPLOYEE</text>
+      <rect style="fill: #ffffff" x="172.6" y="233" width="104.8" height="36"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="172.6" y="233" width="104.8" height="36"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="175.6" y="247"> manager</text>
+      <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="175.6" y="263"> name = John</text>
+      <rect style="fill: #ffffff" x="172.6" y="269" width="104.8" height="8"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="172.6" y="269" width="104.8" height="8"/>
+    </g>
+    <g>
+      <rect style="fill: #ffffff" x="289.4" y="87.7" width="104.8" height="28"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="289.4" y="87.7" width="104.8" height="28"/>
+      <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="341.8" y="106.7">EMPLOYEE</text>
+      <rect style="fill: #ffffff" x="289.4" y="115.7" width="104.8" height="36"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="289.4" y="115.7" width="104.8" height="36"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="292.4" y="129.7"> manager</text>
+      <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="292.4" y="145.7"> name = Mary</text>
+      <rect style="fill: #ffffff" x="289.4" y="151.7" width="104.8" height="8"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="289.4" y="151.7" width="104.8" height="8"/>
+    </g>
+    <g>
+      <rect style="fill: #ffffff" x="180.6" y="108" width="47.3" height="36"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="180.6" y="108" width="47.3" height="36"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="204.25" y="129.9">
+        <tspan x="204.25" y="129.9">Void</tspan>
+      </text>
+      <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="190.6" y1="132.95" x2="217.9" y2="132.95"/>
+    </g>
+    <g>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 277.4 243 C 298.912,242.424 319.743,229.448 332.101,170.201"/>
+      <polygon style="fill: #000000" points="333.632,162.859 336.485,173.669 332.101,170.201 326.696,171.627 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="333.632,162.859 336.485,173.669 332.101,170.201 326.696,171.627 "/>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="289.4" y1="125.7" x2="237.636" y2="125.953"/>
+      <polygon style="fill: #000000" points="230.136,125.989 240.112,120.94 237.636,125.953 240.16,130.94 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="230.136,125.989 240.112,120.94 237.636,125.953 240.16,130.94 "/>
+    </g>
+  </g>
+  <g>
+    <g>
+      <rect style="fill: #ffffff" x="434.851" y="205" width="110.1" height="28"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="434.851" y="205" width="110.1" height="28"/>
+      <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="489.901" y="224">EMPLOYEE</text>
+      <rect style="fill: #ffffff" x="434.851" y="233" width="110.1" height="36"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="434.851" y="233" width="110.1" height="36"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="437.851" y="247"> manager</text>
+      <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="437.851" y="263"> name = Sally</text>
+      <rect style="fill: #ffffff" x="434.851" y="269" width="110.1" height="8"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="434.851" y="269" width="110.1" height="8"/>
+    </g>
+    <g>
+      <rect style="fill: #ffffff" x="551.651" y="87.7" width="104.8" height="28"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="551.651" y="87.7" width="104.8" height="28"/>
+      <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="604.051" y="106.7">EMPLOYEE</text>
+      <rect style="fill: #ffffff" x="551.651" y="115.7" width="104.8" height="36"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="551.651" y="115.7" width="104.8" height="36"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="554.651" y="129.7"> manager</text>
+      <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="554.651" y="145.7"> name = Mary</text>
+      <rect style="fill: #ffffff" x="551.651" y="151.7" width="104.8" height="8"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="551.651" y="151.7" width="104.8" height="8"/>
+    </g>
+    <g>
+      <rect style="fill: #ffffff" x="442.851" y="108" width="47.3" height="36"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="442.851" y="108" width="47.3" height="36"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="466.501" y="129.9">
+        <tspan x="466.501" y="129.9">Void</tspan>
+      </text>
+      <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="452.851" y1="132.95" x2="480.151" y2="132.95"/>
+    </g>
+    <g>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 544.951 243 C 566.463,242.424 581.99,229.468 594.348,170.221"/>
+      <polygon style="fill: #000000" points="595.879,162.879 598.732,173.689 594.348,170.221 588.943,171.647 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="595.879,162.879 598.732,173.689 594.348,170.221 588.943,171.647 "/>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="551.651" y1="125.7" x2="499.887" y2="125.953"/>
+      <polygon style="fill: #000000" points="492.387,125.989 502.363,120.94 499.887,125.953 502.412,130.94 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="492.387,125.989 502.363,120.94 499.887,125.953 502.412,130.94 "/>
+    </g>
+  </g>
+</svg>
