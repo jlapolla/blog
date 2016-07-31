@@ -9,7 +9,7 @@ layout: default
   <ul class="post-list">
     {% for object in site.objects %}
       <li>
-        <span class="post-meta">{{ object.title }}</span>
+        <span class="post-meta">{{ object.uuid }}</span>
 
         <h2>
           <a class="post-link" href="{{ object.url | prepend: site.baseurl }}">{{ object.title }}</a>
