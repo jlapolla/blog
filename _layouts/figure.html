@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% assign asset_url = "/objects/" | append: page.uuid | append: page.file-extension %}
+{% assign asset_url = site.baseurl | append: "/objects/" | append: page.uuid | append: page.file-extension %}
 <article class="post">
 
   <header class="post-header">
