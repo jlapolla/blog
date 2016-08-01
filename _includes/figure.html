@@ -1,0 +1,5 @@
+{% assign asset_url = "/objects/" | append: include.uuid | append: include.file-extension %}
+{% assign figure_url = "/figures/" | append: include.uuid | append: ".html" %}
+<p><a href="{{ figure_url }}"><img src="{{ asset_url }}" alt="figure"></a></p>
+<p class="post-meta">{{ include.uuid }}</p>
+
