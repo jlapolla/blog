@@ -1,0 +1,6 @@
+{% assign figure = site.figures | where: "uuid", include.uuid %}
+{% assign figure = figure[0] %}
+{% assign asset_url = site.baseurl | append: "/objects/" | append: figure.uuid | append: figure.file-extension %}
+<p><a href="{{ site.baseurl | append: figure.url }}"><img src="{{ asset_url }}" alt="figure"></a></p>
+<p class="post-meta">{{ figure.uuid }}</p>
+

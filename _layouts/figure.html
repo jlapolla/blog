@@ -1,0 +1,22 @@
+---
+layout: default
+---
+{% assign asset_url = site.baseurl | append: "/objects/" | append: page.uuid | append: page.file-extension %}
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">{{ page.uuid }}</p>
+  </header>
+
+  <div class="post-content">
+    <p>
+      <a href="{{ asset_url }}">
+        <img src="{{ asset_url }}" alt="figure">
+      </a>
+    </p>
+    {{ content }}
+  </div>
+
+</article>
+

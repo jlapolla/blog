@@ -1,0 +1,14 @@
+---
+layout: page
+title: Figures
+permalink: /figures/
+---
+
+<ul class="post-list">
+  {% for figure in site.figures %}
+    <li>
+      {% include object-short.html object=figure %}
+    </li>
+  {% endfor %}
+</ul>
+
