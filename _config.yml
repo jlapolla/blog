@@ -28,6 +28,8 @@ port: 8080
 collections:
   objects:
     output: true
+  figures:
+    output: true
 
 # Object defaults
 defaults:
@@ -37,4 +39,10 @@ defaults:
       type: objects
     values:
       layout: "default"
+  -
+    scope:
+      path: ""
+      type: figures
+    values:
+      layout: "figure"
 
