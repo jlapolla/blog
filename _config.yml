@@ -38,7 +38,7 @@ defaults:
       path: ""
       type: objects
     values:
-      layout: "default"
+      layout: "object"
   -
     scope:
       path: ""
