@@ -1,39 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<object created="2016-07-30" modified="2016-07-30">
-  <uuid>6204abe8-7714-4bc2-b942-b09d2e2080f9</uuid>
-  <title>Single representation with the entire universe</title>
-  <description>
-    EMPLOYEE John and EMPLOYEE Sally both reference EMPLOYEE Mary as their
-    'manager'. The objects in this address space are a faithful representation
-    of the conceptual objects in the universe.
-  </description>
-  <file-extension>.svg</file-extension>
-</object>
-<object created="2016-07-30" modified="2016-07-30">
-  <uuid>74827304-3a32-4c6f-8af4-14d08c506e8e</uuid>
-  <title>Single representation with a subset of the universe</title>
-  <description>
-    EMPLOYEE John references EMPLOYEE Mary as its 'manager'. The objects in
-    this address space represent a proper subset of the conceptual objects in
-    the universe. The objects in this address space are a faithful
-    representation of the conceptual objects in the universe, even though this
-    address space does not include all conceptual objects in the universe.
-  </description>
-  <file-extension>.svg</file-extension>
-</object>
-<object created="2016-07-30" modified="2016-07-30">
-  <uuid>15a49bf9-0bf2-4ec7-9f36-ca2fe21cbc82</uuid>
-  <title>Single representation breakdown</title>
-  <description>
-    EMPLOYEE John references one EMPLOYEE Mary as its 'manager'. EMPLOYEE Sally
-    references a second EMPLOYEE Mary as its 'manager'. The objects in this
-    address space indicate that two EMPLOYEE's named Mary exist. The objects in
-    this address space also indicates that EMPLOYEE John and EMPLOYEE Sally
-    have different managers. The objects in this address space are not a
-    faithful representation of the conceptual objects in the universe.
-  </description>
-  <file-extension>.svg</file-extension>
-</object>
 <object created="2016-07-31" modified="2016-07-31">
   <uuid>67ed5f08-741a-4f93-8c37-6096a5b4fc26</uuid>
   <title>Single representation discussion</title>
