@@ -1,0 +1,15 @@
+---
+layout: page
+title: Discussions
+permalink: /discussions/
+---
+
+{% assign discussions = site.objects | where: "category", "discussion" %}
+<ul class="post-list">
+  {% for discussion in discussions %}
+    <li>
+      {% include object-long.html object=discussion %}
+    </li>
+  {% endfor %}
+</ul>
+
